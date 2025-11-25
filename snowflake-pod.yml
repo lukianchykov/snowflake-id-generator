@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: snowflakes-pod
+spec:
+  containers:
+    - image: snowflakes:1.1
+      name: snowflake-app
+      ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
